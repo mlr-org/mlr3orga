@@ -74,5 +74,9 @@
   {
     "name": "Type: Question",
     "color": "cc317c"
+  },
+  {
+    "name": "Type: Optimization",
+    "color": "eaba7e"
   }
 ]
