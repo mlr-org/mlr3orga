@@ -54,5 +54,5 @@ patch_labels = dplyr::select(dplyr::filter(patch_labels, color.x != color), c("n
 purrr::pwalk(patch_labels, patch_label)
 
 ### remove extra labels
-extra_labels = dplyr::anti_join(retrieve_labels(), retrieve_labels("labels.json"), by = "name")
+extra_labels = dplyr::anti_join(remote_labels, local_labels, by = "name")
 purrr::pwalk(extra_labels, remove_label)
